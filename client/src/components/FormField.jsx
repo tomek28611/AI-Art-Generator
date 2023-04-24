@@ -1,7 +1,7 @@
 import React from 'react'
 
 const FormField = ({ labelName, type, name, placeholder, value,
-    handleChange, isSupriseMe, handleIsSupriseMe }) => {
+    handleChange, isSupriseMe, handleSupriseMe }) => {
     return (
         <div>
             <div className="flex items-center gap-2 mb-2">
@@ -11,7 +11,7 @@ const FormField = ({ labelName, type, name, placeholder, value,
                 {isSupriseMe && (
                     <button 
                         type="button"
-                        onClick={handleIsSupriseMe}
+                        onClick={handleSupriseMe}
                         className="font-semibold text-xs bg-gray-300 py-1 px-2 rounded-[5px] text-black"
                     >
                         Surprise me
